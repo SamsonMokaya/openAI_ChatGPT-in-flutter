@@ -66,6 +66,9 @@ class _ChatPageState extends State<ChatPage> {
             children: [
 
               //chat body
+              Expanded(
+                  child: _buildList(),
+              ),
 
               // Loads or rotates to show that the bot is thinking
               Visibility(
@@ -129,6 +132,12 @@ class _ChatPageState extends State<ChatPage> {
         ),
       ),
     );
+  }
+
+  ListView _buildList(){
+    return ListView.builder(itemBuilder: ((context, index){
+
+    }));
   }
 }
 
