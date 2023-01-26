@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'model.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -33,6 +35,8 @@ class _ChatPageState extends State<ChatPage> {
 
   late bool isLoading;
   TextEditingController _textController = TextEditingController();
+  final _scrollController = ScrollController();
+  final List<ChatMessage>messages = [];
 
   @override
   void initState(){
@@ -135,9 +139,22 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   ListView _buildList(){
-    return ListView.builder(itemBuilder: ((context, index){
+    return ListView.builder(
+     // itemCount: _messages.length,
+      controller: _scrollController,
+      itemBuilder: ((context, index){
+          return ChatMessageWidget();
+      }),
+    );
+  }
+}
 
-    }));
+class ChatMessageWidget extends StatelessWidget {
+  const ChatMessageWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
 
