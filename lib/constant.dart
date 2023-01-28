@@ -1,4 +1,4 @@
-const apiSecretKey = "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";
+const apiSecretKey = "add your api key";
 
 
 
