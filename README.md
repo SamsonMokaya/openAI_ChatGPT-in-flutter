@@ -1,10 +1,14 @@
-# untitled2
-
-A new Flutter project.
+Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Add your secret api key in the apiKey.dart file before running the program
+
+You can get an api key from https://beta.openai.com/account/api-keys
+
+
+
+***********************************************************************************
 
 A few resources to get you started if this is your first Flutter project:
 
