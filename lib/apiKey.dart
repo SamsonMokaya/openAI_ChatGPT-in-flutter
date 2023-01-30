@@ -1,4 +1,1 @@
-const apiSecretKey = "api key goes here";
-
-
-
+const apiSecretKey = "-- Your secret api key goes here -- ";
